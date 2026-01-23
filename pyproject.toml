@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chat_with_history"
+version = "0.1.0"
+description = "Single-file chat application with history"
+requires-python = ">=3.9"
+
+dependencies = [
+    "agno",
+    "openai"
+]
+
+[project.scripts]
+chat_with_history = "chat_with_history:main"
